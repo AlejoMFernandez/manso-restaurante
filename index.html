@@ -23,9 +23,9 @@
 <link rel="preload" href="fonts/im-fell-english-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" as="image" href="img/lago-m-800.webp" media="(max-width:767px)">
 <link rel="preload" as="image" href="img/fuego-m-800.webp" media="(max-width:767px)">
-<link rel="stylesheet" href="css/fuentes.css?v=5">
-<link rel="stylesheet" href="kit/kit.css?v=5">
-<link rel="stylesheet" href="css/manso.css?v=5">
+<link rel="stylesheet" href="css/fuentes.css?v=6">
+<link rel="stylesheet" href="kit/kit.css?v=6">
+<link rel="stylesheet" href="css/manso.css?v=6">
 <noscript><style>.intro{display:none!important}html{overflow:auto!important}.hA [data-e],.rv,.rv-up{opacity:1!important;transform:none!important;clip-path:none!important}</style></noscript>
 </head>
 <body>
@@ -63,7 +63,7 @@
     <p class="hA-kicker" data-e style="--d:2">Nordelta · frente al lago</p>
     <p class="hA-frase" data-e style="--d:2">Cuatro fuegos de un lado.<br><em>El lago</em>, del otro.</p>
     <div class="hA-ctas" data-e style="--d:3">
-      <button class="accion grande" type="button" data-reservar>Reservá tu mesa <span class="fl">→</span></button>
+      <button class="boton" type="button" data-reservar>Reservá tu mesa <span class="fl">→</span></button>
       <a class="secundaria" href="#carta">Ver la carta</a>
     </div>
     <p class="estado" data-estado data-e style="--d:4"><i></i><span>Abierto</span></p>
@@ -78,17 +78,17 @@
   </div>
   <div class="escena rv-up">
     <div class="escena-fotos">
-      <div class="ft" data-f="kamado"><img src="img/w-kamado-900.webp" srcset="img/w-kamado-900.webp 900w, img/w-kamado-1400.webp 1400w" sizes="(max-width:767px) 100vw, 1240px" alt="El kamado abierto con un corte madurado sobre la parrilla" width="1400" height="1867" decoding="async" loading="lazy"></div>
-      <div class="ft" data-f="josper"><img src="img/w-josper-900.webp" srcset="img/w-josper-900.webp 900w, img/w-josper-1400.webp 1400w" sizes="(max-width:767px) 100vw, 1240px" alt="El horno Josper junto a los ganchos con picañas" width="1400" height="1527" decoding="async" loading="lazy"></div>
-      <div class="ft" data-f="ganchos"><img src="img/w-ganchos-900.webp" srcset="img/w-ganchos-900.webp 900w, img/w-ganchos-1400.webp 1400w" sizes="(max-width:767px) 100vw, 1240px" alt="Costillares colgados de los ganchos sobre el fuego" width="1400" height="1751" decoding="async" loading="lazy"></div>
-      <div class="ft" data-f="parrilla"><img src="img/w-parrilla-900.webp" srcset="img/w-parrilla-900.webp 900w, img/w-parrilla-1400.webp 1400w" sizes="(max-width:767px) 100vw, 1240px" alt="La parrillera trabajando frente a la parrilla y los ganchos" width="1400" height="1556" decoding="async" loading="lazy"></div>
+      <div class="ft" data-f="kamado"><img src="img/w-kamado-600.webp" srcset="img/w-kamado-600.webp 600w, img/w-kamado-1100.webp 1100w" sizes="(max-width:767px) 100vw, (max-width:1023px) 52vw, 600px" alt="El kamado abierto con un corte madurado sobre la parrilla" width="1100" height="1375" decoding="async" loading="lazy"></div>
+      <div class="ft" data-f="josper"><img src="img/w-josper-600.webp" srcset="img/w-josper-600.webp 600w, img/w-josper-1100.webp 1100w" sizes="(max-width:767px) 100vw, (max-width:1023px) 52vw, 600px" alt="El horno Josper al lado de los ganchos con picañas" width="1100" height="1375" decoding="async" loading="lazy"></div>
+      <div class="ft" data-f="ganchos"><img src="img/w-ganchos-600.webp" srcset="img/w-ganchos-600.webp 600w, img/w-ganchos-1100.webp 1100w" sizes="(max-width:767px) 100vw, (max-width:1023px) 52vw, 600px" alt="Costillares colgados de los ganchos sobre el fuego" width="1100" height="1375" decoding="async" loading="lazy"></div>
+      <div class="ft" data-f="parrilla"><img src="img/w-parrilla-600.webp" srcset="img/w-parrilla-600.webp 600w, img/w-parrilla-1100.webp 1100w" sizes="(max-width:767px) 100vw, (max-width:1023px) 52vw, 600px" alt="La parrillera frente a las brasas, la parrilla y los ganchos" width="1100" height="1375" decoding="async" loading="lazy"></div>
     </div>
     <div class="chispas" aria-hidden="true"></div>
     <div class="ficha" role="region" aria-live="polite" aria-label="Lo que sale de este fuego">
       <div class="ficha-cab"><h3>Kamado</h3><button class="ficha-x" type="button" aria-label="Apagar el fuego">×</button></div>
       <p class="ficha-desc"></p>
       <ul></ul>
-      <div class="ficha-pie"><span>Anotá lo que querés probar</span><button type="button" data-reservar-anotados>Reservá →</button></div>
+      <div class="ficha-pie"><span>Anotá lo que querés probar</span><button type="button" class="boton boton--chico" data-reservar-anotados>Reservá <span class="fl">→</span></button></div>
     </div>
     <div class="linea-fuegos">
       <button class="fuego-btn" type="button" data-f="kamado" aria-pressed="false" style="--i:0"><i class="fuego-ico" aria-hidden="true" style="-webkit-mask-image:url(img/f-kamado.svg);mask-image:url(img/f-kamado.svg)"></i><span>Kamado</span></button><button class="fuego-btn" type="button" data-f="josper" aria-pressed="false" style="--i:1"><i class="fuego-ico" aria-hidden="true" style="-webkit-mask-image:url(img/f-josper.svg);mask-image:url(img/f-josper.svg)"></i><span>Josper</span></button><button class="fuego-btn" type="button" data-f="ganchos" aria-pressed="false" style="--i:2"><i class="fuego-ico" aria-hidden="true" style="-webkit-mask-image:url(img/f-ganchos.svg);mask-image:url(img/f-ganchos.svg)"></i><span>Ganchos</span></button><button class="fuego-btn" type="button" data-f="parrilla" aria-pressed="false" style="--i:3"><i class="fuego-ico" aria-hidden="true" style="-webkit-mask-image:url(img/f-parrilla.svg);mask-image:url(img/f-parrilla.svg)"></i><span>Parrilla</span></button>
@@ -144,8 +144,8 @@
   <div class="cab cab--fila">
     <div>
       <p class="kicker rv-up">La carta</p>
-      <h2 class="titulo rv" id="t-carta">A un toque, <em>no a tres Linktrees</em></h2>
-      <p class="bajada rv-up">Una sección por vez. La carta completa, con el bar, el gin y los vinos, tiene su propia página, lista para el QR de las mesas.</p>
+      <h2 class="titulo rv" id="t-carta">Del fuego <em>a tu mesa</em></h2>
+      <p class="bajada rv-up">Para empezar, ensaladas, nuestra cocina y para ir terminando. El bar, el gin y los vinos te esperan en la carta completa.</p>
     </div>
     <a class="secundaria rv-up" href="carta/">Carta completa</a>
   </div>
@@ -208,7 +208,7 @@
       </div>
       <div class="gin-pie">
         <p class="gin-nota" data-gin-nota>Gin + tónica, a precio de carta.</p>
-        <button type="button" class="accion" data-gin-reservar disabled>Reservá y pedilo frente al lago <span class="fl">→</span></button>
+        <button type="button" class="boton" data-gin-reservar disabled>Reservá y pedilo en tu mesa <span class="fl">→</span></button>
       </div>
     </div>
   </div>
@@ -224,7 +224,7 @@
       <p class="kicker rv-up">Eventos</p>
       <h2 class="titulo rv" id="t-eventos">Tu festejo, <em>a la cruz</em></h2>
       <p class="bajada rv-up">Asado a la cruz al aire libre, frente al lago. Contanos qué quieren festejar, cuántos van a ser y para cuándo, y te armamos la propuesta.</p>
-      <button type="button" class="accion grande rv-up" data-evento>Armá tu evento <span class="fl">→</span></button>
+      <button type="button" class="boton rv-up" data-evento>Armá tu evento <span class="fl">→</span></button>
     </div>
   </div>
 </section>
@@ -239,8 +239,7 @@
   </div>
   <div class="llegar-caja">
     <div class="mapa rv-up">
-      <iframe title="Mapa: Manso Restaurante en Nordelta" src="https://maps.google.com/maps?ll=-34.4302691,-58.639928&amp;z=15&amp;t=m&amp;hl=es&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <div class="pin" aria-hidden="true"><img src="img/logo-hueso.svg" alt="" width="2804" height="883"></div>
+      <iframe title="Mapa: Manso Restaurante en Nordelta" src="https://maps.google.com/maps?q=-34.4302691,-58.639928&amp;z=16&amp;t=m&amp;hl=es&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <div class="llegar-txt">
       <dl class="horarios rv-up">
@@ -249,8 +248,8 @@
         <div><dt>Lunes</dt><dd>Nuestros fuegos descansan</dd></div>
       </dl>
       <div class="llegar-ctas rv-up">
-        <a class="secundaria" href="https://www.google.com/maps/search/?api=1&amp;query=Manso+Restaurante&amp;query_place_id=ChIJn5RAeZulvJURbPFAAbjYP20" target="_blank" rel="noopener">Abrir en Google Maps</a>
-        <a class="secundaria" href="https://wa.me/5491141844058" target="_blank" rel="noopener">WhatsApp 11 4184-4058</a>
+        <a class="boton" href="https://www.google.com/maps/search/?api=1&amp;query=Manso+Restaurante&amp;query_place_id=ChIJn5RAeZulvJURbPFAAbjYP20" target="_blank" rel="noopener"><i class="b-ico b-ico--mapa" aria-hidden="true"></i>Cómo llegar</a>
+        <a class="boton boton--linea" href="https://wa.me/5491141844058" target="_blank" rel="noopener"><i class="b-ico b-ico--wa" aria-hidden="true"></i>WhatsApp 11 4184-4058</a>
       </div>
     </div>
   </div>
@@ -258,12 +257,12 @@
 </main>
 
 <footer class="pie">
-  <img class="pie-logo" src="img/logo-hueso.svg" alt="Manso Restaurante" width="2804" height="883" loading="lazy">
+  <img class="pie-logo" src="img/logo-carbon.svg" alt="Manso Restaurante" width="2804" height="883" loading="lazy">
   <div class="trazo-pie" aria-hidden="true"></div>
   <p>Av. de los Lagos 1050, Nordelta · <a href="https://instagram.com/manso.restaurante" target="_blank" rel="noopener">@manso.restaurante</a> · <a href="carta/">Carta</a></p>
   <p class="pie-panel"><a href="admin/" target="_blank" rel="noopener">¿Sos de Manso? Probá el panel del dueño →</a></p>
   <p class="credito">Sitio desarrollado por <a href="https://alejomfernandez.com.ar" target="_blank" rel="noopener">Alejo Martín Fernández</a></p>
 </footer>
-<script type="module" src="js/manso.js?v=5"></script>
+<script type="module" src="js/manso.js?v=6"></script>
 </body>
 </html>

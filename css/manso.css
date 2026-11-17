@@ -526,3 +526,79 @@ html.sin-pill .kit-demo-pill{opacity:0!important;pointer-events:none;transform:t
 
 [data-tonicas]{grid-auto-rows:minmax(150px,auto);align-content:center}
 @media (min-width:1100px){ .llegar-caja{grid-template-columns:minmax(0,1.25fr) minmax(0,1fr)} }
+
+/* ---------- v6: fotos enteras, ficha chica, botones que se ven, mapa y pie ---------- */
+/* botones de acción: llenos, color brasa */
+.boton{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:56px;padding:0 30px;border:0;border-radius:3px;background:var(--brasa);color:var(--carbon);font-family:var(--serif);font-style:italic;font-size:clamp(21px,1.8vw,24px);line-height:1;text-decoration:none;cursor:pointer;box-shadow:0 10px 30px -12px rgba(226,113,29,.7);transition:background-color .25s,transform .25s var(--ease),box-shadow .25s}
+.boton .fl{display:inline-block;font-style:normal;transition:transform .3s var(--ease)}
+.boton:hover,.boton:focus-visible{background:var(--brasa-luz);transform:translateY(-2px)}
+.boton:hover .fl{transform:translateX(5px)}
+.boton:focus-visible{outline:2px solid var(--hueso);outline-offset:3px}
+.boton:disabled{opacity:.4;cursor:default;box-shadow:none;transform:none;background:var(--brasa)}
+.boton--linea{background:transparent;color:var(--hueso);border:1.5px solid rgba(237,230,218,.7);box-shadow:none}
+.boton--linea:hover,.boton--linea:focus-visible{background:var(--hueso);color:var(--carbon)}
+.boton--chico{min-height:44px;padding:0 18px;font-size:18px;box-shadow:none}
+.b-ico{width:20px;height:20px;flex:none;background:currentColor;-webkit-mask:var(--m) center/contain no-repeat;mask:var(--m) center/contain no-repeat}
+.b-ico--mapa{--m:url(../img/i-mapa.svg)}
+.b-ico--wa{--m:url(../img/i-chat.svg)}
+.llegar-ctas{gap:12px;margin-top:22px}
+.gin-pie .boton:not(:disabled){animation:late 2.4s ease-in-out infinite}
+.eventos-txt .boton{margin-top:6px}
+@media (max-width:767px){
+  .hA-ctas .boton,.eventos-txt .boton,.gin-pie .boton{width:100%}
+  .llegar-ctas{display:grid}
+  .llegar-ctas .boton{width:100%}
+}
+
+/* WOW: la foto entera a un costado, la ficha chica y los dibujos libres */
+.escena-fotos .ft img{object-position:50% 50%}
+.ficha-desc,.ficha-x{display:none!important}
+.ficha{grid-template-rows:auto 1fr auto}
+.ficha h3{font-size:28px;margin-bottom:6px}
+.ficha li{min-height:50px;gap:10px}
+.ficha li b{font-size:17px}
+.ficha li small{font-size:12px}
+.ficha li .pr{font-size:14px}
+.ficha-pie{padding-top:8px}
+@media (min-width:768px){
+  .escena{--eh:clamp(600px,calc(100svh - 110px),740px);--fw:min(calc(var(--eh) * .8),52%);height:var(--eh);background:radial-gradient(120% 70% at 30% 110%,rgba(226,113,29,.16),transparent 60%),var(--carbon-2)}
+  .escena-fotos{position:absolute;top:0;right:0;bottom:0;width:var(--fw)}
+  .escena-fotos .ft::after{background:linear-gradient(90deg,rgba(30,26,24,.6) 0%,rgba(30,26,24,0) 12%)}
+  .escena-vacia{right:var(--fw);padding-bottom:180px}
+  .chispas{right:var(--fw)}
+  .linea-fuegos{right:var(--fw);padding:0 clamp(14px,2vw,28px) clamp(18px,2.4vw,30px)}
+  .fuego-ico{height:clamp(76px,8.4vw,116px)}
+  .linea-fuegos::before{bottom:clamp(60px,6vw,74px)}
+  .fuego-btn span{letter-spacing:.2em;padding-left:.2em}
+  .ficha{--fm:clamp(24px,3.2vw,48px);left:var(--fm)!important;margin-left:0;top:var(--fm);width:min(360px,calc(100% - var(--fw) - 2 * var(--fm)));height:344px;padding:20px 22px 12px;background:rgba(20,17,16,.78);transition:opacity .4s var(--ease),transform .5s var(--ease)}
+}
+@media (min-width:768px) and (max-width:1023px){
+  .ficha{height:330px;padding:16px 16px 10px}
+  .ficha li .pr{font-size:13px}
+}
+@media (max-width:767px){
+  .escena-fotos{height:auto;aspect-ratio:1/1}
+  .escena-fotos .ft img{object-position:50% var(--oy,50%)}
+  .escena-fotos .ft[data-f="kamado"]{--oy:74%}
+  .escena-fotos .ft[data-f="josper"]{--oy:58%}
+  .escena-fotos .ft[data-f="ganchos"]{--oy:40%}
+  .escena-fotos .ft[data-f="parrilla"]{--oy:66%}
+  .escena-fotos .ft::after{background:linear-gradient(0deg,rgba(30,26,24,1) 0%,rgba(30,26,24,.35) 15%,rgba(20,17,16,0) 32%)}
+  .chispas{height:100vw}
+  .linea-fuegos{margin-top:-60px}
+  .ficha{height:326px;padding:16px 18px 8px}
+  .ficha li{min-height:52px}
+}
+
+/* mapa: el marcador es el de Google, queda fijo en el lugar */
+.pin{display:none}
+
+/* pie: corte de color */
+.pie{background:var(--hueso);color:var(--carbon);padding-top:clamp(56px,7vw,88px)}
+.pie p{color:#5E5851}
+.pie a{color:var(--carbon)}
+.pie-panel a{color:#A24A0E}
+.trazo-pie{background:var(--brasa);-webkit-mask:url(../img/f-horizonte.svg) center/100% 100% no-repeat;mask:url(../img/f-horizonte.svg) center/100% 100% no-repeat;opacity:.9}
+.pie .credito a{text-decoration:underline;text-underline-offset:3px}
+.ficha-pie .boton{text-transform:none;letter-spacing:0;font-weight:400;color:var(--carbon)}
+.ficha-pie .boton:hover{color:var(--carbon)}
