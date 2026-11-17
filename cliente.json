@@ -1,0 +1,2371 @@
+{
+ "$schema": "./docs/cliente.schema.json",
+ "id": "manso-restaurante",
+ "nombre": "Manso Restaurante",
+ "pais": "AR",
+ "idioma": "es",
+ "modo": "demo",
+ "whatsapp": "5491141844058",
+ "instagram": "manso.restaurante",
+ "prefijoPedido": "MS",
+ "supabase": {
+  "url": "",
+  "anonKey": ""
+ },
+ "marca": {
+  "logo": "img/logo-hueso.svg",
+  "logoPanel": "img/logo-hueso.svg",
+  "logoClaro": "img/logo-hueso.svg",
+  "colores": {
+   "fondo": "#141110",
+   "superficie": "#1E1A18",
+   "texto": "#EDE6DA",
+   "primario": "#E2711D",
+   "acento": "#F29A4A",
+   "borde": "#3A332E"
+  },
+  "fuentes": {
+   "titulos": "'Fell', Georgia, serif",
+   "texto": "'Montserrat', system-ui, sans-serif",
+   "googleFonts": ""
+  },
+  "estilo": {
+   "forma": "recta",
+   "sombra": "suave",
+   "borde": true,
+   "mayusculas": false
+  }
+ },
+ "modulos": {
+  "carta": true,
+  "carrito": false,
+  "reservas": true,
+  "admin": true,
+  "cartaQR": true
+ },
+ "horarios": {
+  "lun": [],
+  "mar": [
+   [
+    "12:00",
+    "16:00"
+   ],
+   [
+    "20:00",
+    "00:00"
+   ]
+  ],
+  "mie": [
+   [
+    "12:00",
+    "16:00"
+   ],
+   [
+    "20:00",
+    "00:00"
+   ]
+  ],
+  "jue": [
+   [
+    "12:00",
+    "16:00"
+   ],
+   [
+    "20:00",
+    "00:00"
+   ]
+  ],
+  "vie": [
+   [
+    "12:00",
+    "16:00"
+   ],
+   [
+    "20:00",
+    "00:00"
+   ]
+  ],
+  "sab": [
+   [
+    "12:00",
+    "00:00"
+   ]
+  ],
+  "dom": [
+   [
+    "12:00",
+    "00:00"
+   ]
+  ]
+ },
+ "reservas": {
+  "capacidad": 120,
+  "maxPersonas": 12,
+  "anticipacionMin": 60,
+  "diasAdelante": 30,
+  "servicios": [
+   {
+    "id": "almuerzo",
+    "nombre": "Almuerzo",
+    "tandas": [
+     {
+      "nombre": "Mediodía",
+      "turnos": [
+       "12:00",
+       "12:30",
+       "13:00",
+       "13:30",
+       "14:00",
+       "14:30"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "tarde",
+    "nombre": "Tarde y atardecer",
+    "dias": [
+     "sab",
+     "dom"
+    ],
+    "tandas": [
+     {
+      "nombre": "Frente al lago",
+      "turnos": [
+       "17:00",
+       "17:30",
+       "18:00",
+       "18:30",
+       "19:00",
+       "19:30"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "cena",
+    "nombre": "Cena",
+    "tandas": [
+     {
+      "nombre": "Primer tiempo",
+      "turnos": [
+       "20:00",
+       "20:30",
+       "21:00"
+      ]
+     },
+     {
+      "nombre": "Segundo tiempo",
+      "turnos": [
+       "21:30",
+       "22:00",
+       "22:30"
+      ]
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "id": "lago",
+    "label": "Preferimos mesa frente al lago"
+   },
+   {
+    "id": "cumple",
+    "label": "Venimos a festejar algo"
+   }
+  ]
+ },
+ "carta": {
+  "categorias": [
+   {
+    "id": "para-empezar",
+    "nombre": "Para empezar"
+   },
+   {
+    "id": "fuegos",
+    "nombre": "Fuegos",
+    "bajada": "Con acompañamiento a elección: papa rota con huevo molé, zanahorias asadas con feta, rúcula con parmesano, vegetales al josper, puré o papas fritas."
+   },
+   {
+    "id": "ensaladas",
+    "nombre": "Ensaladas"
+   },
+   {
+    "id": "nuestra-cocina",
+    "nombre": "Nuestra cocina"
+   },
+   {
+    "id": "para-terminar",
+    "nombre": "Para ir terminando"
+   },
+   {
+    "id": "para-tomar",
+    "nombre": "Para tomar"
+   },
+   {
+    "id": "cafeteria",
+    "nombre": "Cafetería"
+   },
+   {
+    "id": "parador",
+    "nombre": "El Parador",
+    "bajada": "La carta de día, frente al agua."
+   },
+   {
+    "id": "gin",
+    "nombre": "Gin",
+    "bajada": "Más de 25 etiquetas, con tónica y topping a elección."
+   },
+   {
+    "id": "tonica",
+    "nombre": "Tónica"
+   },
+   {
+    "id": "tragos",
+    "nombre": "Tragos y cócteles"
+   },
+   {
+    "id": "cerveza",
+    "nombre": "Cervezas"
+   },
+   {
+    "id": "whisky",
+    "nombre": "Whiskies"
+   },
+   {
+    "id": "destilados",
+    "nombre": "Destilados y licores"
+   },
+   {
+    "id": "vinos-espumosos",
+    "nombre": "Espumosos y champagne"
+   },
+   {
+    "id": "vinos-blancos",
+    "nombre": "Vinos blancos"
+   },
+   {
+    "id": "vinos-rosados",
+    "nombre": "Vinos rosados"
+   },
+   {
+    "id": "vinos-tintos",
+    "nombre": "Vinos tintos"
+   },
+   {
+    "id": "vinos-dulces",
+    "nombre": "Vinos dulces"
+   }
+  ],
+  "productos": [
+   {
+    "id": "para-empezar-empanadas-de-asado",
+    "categoria": "para-empezar",
+    "nombre": "Empanadas de asado",
+    "descripcion": "Fritas.",
+    "precio": 8900
+   },
+   {
+    "id": "para-empezar-provoleta",
+    "categoria": "para-empezar",
+    "nombre": "Provoleta",
+    "descripcion": "Tomates asados y pesto de albahaca.",
+    "precio": 19800
+   },
+   {
+    "id": "chorizo-kamado",
+    "categoria": "para-empezar",
+    "nombre": "Chorizo al kamado",
+    "descripcion": "Chimichurri fresco.",
+    "precio": 12600
+   },
+   {
+    "id": "para-empezar-morcilla",
+    "categoria": "para-empezar",
+    "nombre": "Morcilla",
+    "descripcion": "Mermelada de morrón.",
+    "precio": 12600
+   },
+   {
+    "id": "mollejas-josper",
+    "categoria": "para-empezar",
+    "nombre": "Mollejas al josper",
+    "descripcion": "Verduras asadas.",
+    "precio": 44300
+   },
+   {
+    "id": "para-empezar-milhojas-de-papas-crocantes",
+    "categoria": "para-empezar",
+    "nombre": "Milhojas de papas crocantes",
+    "descripcion": "Huevo poché y panceta ahumada.",
+    "precio": 22100
+   },
+   {
+    "id": "para-empezar-matambrito-de-cerdo",
+    "categoria": "para-empezar",
+    "nombre": "Matambrito de cerdo",
+    "descripcion": "Boniato y reducción de rosa mosqueta.",
+    "precio": 37900
+   },
+   {
+    "id": "para-empezar-burratina",
+    "categoria": "para-empezar",
+    "nombre": "Burratina",
+    "descripcion": "Aderezo, tomate y frutillas asadas, rúcula, albahaca y tomillo.",
+    "precio": 34100
+   },
+   {
+    "id": "bbq-ribs",
+    "categoria": "fuegos",
+    "nombre": "BBQ ribs",
+    "descripcion": "Al josper. Con acompañamiento.",
+    "precio": 47800
+   },
+   {
+    "id": "pamplona-pollo",
+    "categoria": "fuegos",
+    "nombre": "Pamplona de pollo",
+    "descripcion": "Rellena con morrón asado, provoleta, cebolla caramelizada, tomates secos y puré de papas.",
+    "precio": 46500
+   },
+   {
+    "id": "pizza-tomate",
+    "categoria": "fuegos",
+    "nombre": "Pizza · tomate asado",
+    "descripcion": "Mozzarella y aceite de albahaca. Solo los domingos a la noche, al josper.",
+    "precio": 25000
+   },
+   {
+    "id": "pizza-azul",
+    "categoria": "fuegos",
+    "nombre": "Pizza · cebolla caramelizada",
+    "descripcion": "Queso azul y mozzarella. Solo los domingos a la noche.",
+    "precio": 27300
+   },
+   {
+    "id": "pizza-crudo",
+    "categoria": "fuegos",
+    "nombre": "Pizza · rúcula y crudo",
+    "descripcion": "Tomate asado, rúcula y jamón crudo. Solo los domingos a la noche.",
+    "precio": 29500
+   },
+   {
+    "id": "pizza-stracciatella",
+    "categoria": "fuegos",
+    "nombre": "Pizza · stracciatella",
+    "descripcion": "Tomates confitados, tomates secos y crocante de jamón serrano. Solo los domingos a la noche.",
+    "precio": 28400
+   },
+   {
+    "id": "costilla-centro",
+    "categoria": "fuegos",
+    "nombre": "Costilla del centro",
+    "descripcion": "6 horas al gancho. Con acompañamiento.",
+    "precio": 103400
+   },
+   {
+    "id": "picana",
+    "categoria": "fuegos",
+    "nombre": "Picaña (Porción)",
+    "descripcion": "Al gancho. Con acompañamiento.",
+    "precio": 55000
+   },
+   {
+    "id": "picana-compartir",
+    "categoria": "fuegos",
+    "nombre": "Picaña para compartir",
+    "descripcion": "Al gancho. Con acompañamiento.",
+    "precio": 111300
+   },
+   {
+    "id": "ojo-bife",
+    "categoria": "fuegos",
+    "nombre": "Ojo de bife con hueso",
+    "descripcion": "Al kamado. Con acompañamiento.",
+    "precio": 86600
+   },
+   {
+    "id": "pinchos-bife",
+    "categoria": "fuegos",
+    "nombre": "Pinchos de bife de chorizo",
+    "descripcion": "Panceta, cebolla morada, morrón y tomates secos.",
+    "precio": 57800
+   },
+   {
+    "id": "t-bone",
+    "categoria": "fuegos",
+    "nombre": "T-bone",
+    "descripcion": "Manteca de hierbas. Con acompañamiento.",
+    "precio": 76400
+   },
+   {
+    "id": "entrana",
+    "categoria": "fuegos",
+    "nombre": "Entraña",
+    "descripcion": "A la parrilla. Con acompañamiento.",
+    "precio": 71500
+   },
+   {
+    "id": "vacio",
+    "categoria": "fuegos",
+    "nombre": "Vacío",
+    "descripcion": "A la parrilla. Con acompañamiento.",
+    "precio": 72500
+   },
+   {
+    "id": "tira-banderita",
+    "categoria": "fuegos",
+    "nombre": "Tira banderita",
+    "descripcion": "A la parrilla. Con acompañamiento.",
+    "precio": 65900
+   },
+   {
+    "id": "trucha-ahumada",
+    "categoria": "fuegos",
+    "nombre": "Trucha ahumada",
+    "descripcion": "Tomate cherry, cebolla morada, mango, palta y gremolata de menta.",
+    "precio": 57900
+   },
+   {
+    "id": "pollo-deshuesado",
+    "categoria": "fuegos",
+    "nombre": "Pollo deshuesado",
+    "descripcion": "Manteca de coriandro. Con acompañamiento.",
+    "precio": 47800
+   },
+   {
+    "id": "ensaladas-cabutia-asado",
+    "categoria": "ensaladas",
+    "nombre": "Cabutia asado",
+    "descripcion": "Espinaca, rúcula, queso azul, cebolla morada, jamón crudo español y nueces especiadas. Aderezo de yogurt.",
+    "precio": 36200
+   },
+   {
+    "id": "ensaladas-coliflor-asado",
+    "categoria": "ensaladas",
+    "nombre": "Coliflor asado",
+    "descripcion": "Palta, rúcula, kale, garbanzos crocantes y queso feta. Aderezo de tahini y dijón.",
+    "precio": 27100
+   },
+   {
+    "id": "ensaladas-roll-de-espinaca",
+    "categoria": "ensaladas",
+    "nombre": "Roll de espinaca",
+    "descripcion": "Trucha ahumada, cream cheese alimonado y mix de verdes.",
+    "precio": 40000
+   },
+   {
+    "id": "ensaladas-langostinos-grillados",
+    "categoria": "ensaladas",
+    "nombre": "Langostinos grillados",
+    "descripcion": "Palta, mango, mix de verdes y cebolla marinada. Aderezo de limón y maracuyá.",
+    "precio": 47700
+   },
+   {
+    "id": "ensaladas-pollo-crocante-de-almendras",
+    "categoria": "ensaladas",
+    "nombre": "Pollo crocante de almendras",
+    "descripcion": "Cremoso de remolachas asadas, hojas verdes y stracciatella. Aderezo de lima.",
+    "precio": 43300
+   },
+   {
+    "id": "nuestra-cocina-cappelletti-de-trucha-ahumada",
+    "categoria": "nuestra-cocina",
+    "nombre": "Cappelletti de trucha ahumada",
+    "descripcion": "Tonkatsu, aceite de sésamo y salsa de ostras.",
+    "precio": 33600
+   },
+   {
+    "id": "nuestra-cocina-lasagna-de-asado",
+    "categoria": "nuestra-cocina",
+    "nombre": "Lasagna de asado",
+    "descripcion": "",
+    "precio": 39900
+   },
+   {
+    "id": "nuestra-cocina-risotto-de-langostinos",
+    "categoria": "nuestra-cocina",
+    "nombre": "Risotto de langostinos",
+    "descripcion": "Con sal de molleja.",
+    "precio": 39000
+   },
+   {
+    "id": "nuestra-cocina-cintas-con-vegetales-asados",
+    "categoria": "nuestra-cocina",
+    "nombre": "Cintas con vegetales asados",
+    "descripcion": "Stracciatella y alcaparras.",
+    "precio": 30500
+   },
+   {
+    "id": "nuestra-cocina-ravioles-de-cordero",
+    "categoria": "nuestra-cocina",
+    "nombre": "Ravioles de cordero",
+    "descripcion": "Salsa rústica de tomates y almendras tostadas.",
+    "precio": 35200
+   },
+   {
+    "id": "nuestra-cocina-milanesa-de-bife-de-chorizo",
+    "categoria": "nuestra-cocina",
+    "nombre": "Milanesa de bife de chorizo",
+    "descripcion": "Napolitana, con papas fritas.",
+    "precio": 41000
+   },
+   {
+    "id": "nuestra-cocina-hamburguesa",
+    "categoria": "nuestra-cocina",
+    "nombre": "Hamburguesa",
+    "descripcion": "Cebolla crispy, mayonesa de panceta, cheddar, tomate, lechuga y pan de wagyu.",
+    "precio": 34400
+   },
+   {
+    "id": "nuestra-cocina-tacos-crocantes-de-lomo",
+    "categoria": "nuestra-cocina",
+    "nombre": "Tacos crocantes de lomo",
+    "descripcion": "Criolla, mango y crema ácida.",
+    "precio": 30500
+   },
+   {
+    "id": "para-terminar-key-lime-pie",
+    "categoria": "para-terminar",
+    "nombre": "Key lime pie",
+    "descripcion": "",
+    "precio": 15800
+   },
+   {
+    "id": "para-terminar-frutas-de-invierno-a-la-chapa",
+    "categoria": "para-terminar",
+    "nombre": "Frutas de invierno a la chapa",
+    "descripcion": "Con helado de crema.",
+    "precio": 15800
+   },
+   {
+    "id": "para-terminar-panqueque-de-dulce-de-leche",
+    "categoria": "para-terminar",
+    "nombre": "Panqueque de dulce de leche",
+    "descripcion": "Con helado de crema.",
+    "precio": 15800
+   },
+   {
+    "id": "para-terminar-roll-de-merengue",
+    "categoria": "para-terminar",
+    "nombre": "Roll de merengue",
+    "descripcion": "Dulce de leche y frutillas. Sin TACC.",
+    "precio": 15800
+   },
+   {
+    "id": "para-terminar-budin-del-cielo",
+    "categoria": "para-terminar",
+    "nombre": "Budín del cielo",
+    "descripcion": "Frutos rojos y helado de crema. Sin TACC.",
+    "precio": 15800
+   },
+   {
+    "id": "para-terminar-torta-humeda-de-chocolate",
+    "categoria": "para-terminar",
+    "nombre": "Torta húmeda de chocolate",
+    "descripcion": "Salsa toffee y helado de crema. Sin TACC.",
+    "precio": 15800
+   },
+   {
+    "id": "para-terminar-queso-y-dulce",
+    "categoria": "para-terminar",
+    "nombre": "Queso y dulce",
+    "descripcion": "Queso cuartirolo con batata o membrillo. Sin TACC.",
+    "precio": 15800
+   },
+   {
+    "id": "para-terminar-helados",
+    "categoria": "para-terminar",
+    "nombre": "Helados",
+    "descripcion": "Sin gluten. Frambuesa, Nutella, chocolate 70 %, sorbete de limón, doble dulce de leche con almendras caramelizadas.",
+    "precio": 15800
+   },
+   {
+    "id": "para-tomar-agua",
+    "categoria": "para-tomar",
+    "nombre": "Agua",
+    "descripcion": "Con o sin gas.",
+    "precio": 4500
+   },
+   {
+    "id": "para-tomar-acqua-panna-750-ml",
+    "categoria": "para-tomar",
+    "nombre": "Acqua Panna 750 ml",
+    "descripcion": "",
+    "precio": 17000
+   },
+   {
+    "id": "para-tomar-san-pellegrino-750-ml",
+    "categoria": "para-tomar",
+    "nombre": "San Pellegrino 750 ml",
+    "descripcion": "",
+    "precio": 17000
+   },
+   {
+    "id": "para-tomar-levite",
+    "categoria": "para-tomar",
+    "nombre": "Levité",
+    "descripcion": "Naranja, pomelo o manzana.",
+    "precio": 4500
+   },
+   {
+    "id": "para-tomar-gaseosas",
+    "categoria": "para-tomar",
+    "nombre": "Gaseosas",
+    "descripcion": "Coca, Coca Light, Sprite, Sprite Cero, Fanta y tónica.",
+    "precio": 4600
+   },
+   {
+    "id": "para-tomar-pomelada-con-tomillo",
+    "categoria": "para-tomar",
+    "nombre": "Pomelada con tomillo",
+    "descripcion": "",
+    "precio": 8500
+   },
+   {
+    "id": "para-tomar-limonada-menta-y-jengibre",
+    "categoria": "para-tomar",
+    "nombre": "Limonada menta y jengibre",
+    "descripcion": "",
+    "precio": 8500
+   },
+   {
+    "id": "para-tomar-batido-manso",
+    "categoria": "para-tomar",
+    "nombre": "Batido Manso",
+    "descripcion": "Maracuyá, durazno, frutilla, arándanos y azúcar.",
+    "precio": 8500
+   },
+   {
+    "id": "para-tomar-batido-maname",
+    "categoria": "para-tomar",
+    "nombre": "Batido Maname",
+    "descripcion": "Maracuyá, naranja, limón, menta y azúcar.",
+    "precio": 8500
+   },
+   {
+    "id": "cafeteria-cafe-chico",
+    "categoria": "cafeteria",
+    "nombre": "Café chico",
+    "descripcion": "",
+    "precio": 4800
+   },
+   {
+    "id": "cafeteria-cafe-mediano",
+    "categoria": "cafeteria",
+    "nombre": "Café mediano",
+    "descripcion": "",
+    "precio": 5000
+   },
+   {
+    "id": "cafeteria-cafe-doble",
+    "categoria": "cafeteria",
+    "nombre": "Café doble",
+    "descripcion": "",
+    "precio": 5500
+   },
+   {
+    "id": "cafeteria-cafe-mocca",
+    "categoria": "cafeteria",
+    "nombre": "Café mocca",
+    "descripcion": "",
+    "precio": 5500
+   },
+   {
+    "id": "cafeteria-carajillo",
+    "categoria": "cafeteria",
+    "nombre": "Carajillo",
+    "descripcion": "Licor 43 y ristretto.",
+    "precio": 10200
+   },
+   {
+    "id": "cafeteria-te-green-calm",
+    "categoria": "cafeteria",
+    "nombre": "Té Green Calm",
+    "descripcion": "Verbena, pieles de naranja y clementinas.",
+    "precio": 4900
+   },
+   {
+    "id": "cafeteria-te-red",
+    "categoria": "cafeteria",
+    "nombre": "Té Red",
+    "descripcion": "Rooibos, bergamota y lavanda.",
+    "precio": 4900
+   },
+   {
+    "id": "cafeteria-te-monsoon-wedding",
+    "categoria": "cafeteria",
+    "nombre": "Té Monsoon Wedding",
+    "descripcion": "Verbena, lemongrass, manzanilla, menta y pétalos de rosa.",
+    "precio": 4900
+   },
+   {
+    "id": "cafeteria-te-english-breakfast",
+    "categoria": "cafeteria",
+    "nombre": "Té English Breakfast",
+    "descripcion": "Té negro clásico.",
+    "precio": 4900
+   },
+   {
+    "id": "cafeteria-te-omm",
+    "categoria": "cafeteria",
+    "nombre": "Té Omm",
+    "descripcion": "Jengibre, manzanilla, lemon verbena y canela.",
+    "precio": 4900
+   },
+   {
+    "id": "cafeteria-te-green-chamomille",
+    "categoria": "cafeteria",
+    "nombre": "Té Green Chamomille",
+    "descripcion": "Hebras verdes, manzanilla y pieles de naranja.",
+    "precio": 4900
+   },
+   {
+    "id": "parador-empanada-de-asado",
+    "categoria": "parador",
+    "nombre": "Empanada de asado",
+    "descripcion": "",
+    "precio": 8900
+   },
+   {
+    "id": "parador-sandwich-de-jamon-cocido-y-queso",
+    "categoria": "parador",
+    "nombre": "Sándwich de jamón cocido y queso",
+    "descripcion": "Provoleta, parmesano y sbrinz.",
+    "precio": 15300
+   },
+   {
+    "id": "parador-sandwich-de-stracciatella",
+    "categoria": "parador",
+    "nombre": "Sándwich de stracciatella",
+    "descripcion": "Jamón crudo, tomates secos y rúcula. Opción sin gluten.",
+    "precio": 17000
+   },
+   {
+    "id": "parador-tabla-de-quesos",
+    "categoria": "parador",
+    "nombre": "Tabla de quesos",
+    "descripcion": "Gruyère, feta y azul, salame, jamón crudo, croquetas de asado y de vacío, nueces especiadas y milhojas de papa.",
+    "precio": 31800
+   },
+   {
+    "id": "parador-hamburguesa-con-papas",
+    "categoria": "parador",
+    "nombre": "Hamburguesa con papas",
+    "descripcion": "",
+    "precio": 34400
+   },
+   {
+    "id": "parador-cookie",
+    "categoria": "parador",
+    "nombre": "Cookie",
+    "descripcion": "Chips de chocolate y escamas de sal marina.",
+    "precio": 5900
+   },
+   {
+    "id": "parador-churros",
+    "categoria": "parador",
+    "nombre": "Churros",
+    "descripcion": "Con salsa de dulce de leche o chocolate.",
+    "precio": 8000
+   },
+   {
+    "id": "parador-helados",
+    "categoria": "parador",
+    "nombre": "Helados",
+    "descripcion": "Sin gluten.",
+    "precio": 15800
+   },
+   {
+    "id": "parador-key-lime-pie",
+    "categoria": "parador",
+    "nombre": "Key lime pie",
+    "descripcion": "",
+    "precio": 15800
+   },
+   {
+    "id": "parador-torta-humeda-de-chocolate",
+    "categoria": "parador",
+    "nombre": "Torta húmeda de chocolate",
+    "descripcion": "Dulce de leche y helado de crema.",
+    "precio": 15800
+   },
+   {
+    "id": "gin-bosque",
+    "categoria": "gin",
+    "nombre": "Bosque",
+    "descripcion": "Notas cítricas, enebro patagónico suave y cedrón.",
+    "precio": 10300,
+    "familia": "argentino"
+   },
+   {
+    "id": "gin-bosque-alta-montana",
+    "categoria": "gin",
+    "nombre": "Bosque Alta Montaña",
+    "descripcion": "Notas tradicionales de gin London Dry.",
+    "precio": 12700,
+    "familia": "argentino"
+   },
+   {
+    "id": "gin-heredero-tangerine",
+    "categoria": "gin",
+    "nombre": "Heredero Tangerine",
+    "descripcion": "Pieles de mandarinas, bayas de enebro y romero.",
+    "precio": 9800,
+    "familia": "argentino"
+   },
+   {
+    "id": "gin-heredero-pink-boysenberry",
+    "categoria": "gin",
+    "nombre": "Heredero Pink Boysenberry",
+    "descripcion": "Variedad de frutos.",
+    "precio": 9800,
+    "familia": "argentino"
+   },
+   {
+    "id": "gin-heredero-london-dry",
+    "categoria": "gin",
+    "nombre": "Heredero London Dry",
+    "descripcion": "Enebro, pimienta de jamaica, regaliz y raíz angélica, coriandro y cáscara de limón.",
+    "precio": 9800,
+    "familia": "argentino"
+   },
+   {
+    "id": "gin-heredero-pomelo-rosa",
+    "categoria": "gin",
+    "nombre": "Heredero Pomelo Rosa",
+    "descripcion": "Pomelo rosa, bayas de enebro, romero y hierbas aromáticas.",
+    "precio": 9800,
+    "familia": "argentino"
+   },
+   {
+    "id": "gin-aconcagua-original-blue",
+    "categoria": "gin",
+    "nombre": "Aconcagua Original Blue",
+    "descripcion": "Bayas de enebro, cáscara de limón, semillas de coriandro, raíz de regaliz.",
+    "precio": 9800,
+    "familia": "argentino"
+   },
+   {
+    "id": "gin-aconcagua-red-fruits-special",
+    "categoria": "gin",
+    "nombre": "Aconcagua Red Fruits Special",
+    "descripcion": "Almendra, bayas de enebro, semilla coriandro, fruto rojo, cáscara limón, raíz de regaliz, raíz de angélica, cassia.",
+    "precio": 11900,
+    "familia": "argentino"
+   },
+   {
+    "id": "gin-aconcagua-lime-special-edition",
+    "categoria": "gin",
+    "nombre": "Aconcagua Lime Special Edition",
+    "descripcion": "Lima, bayas de enebro, lemon glass, semillas coriandro, raíz de regaliz, raíz angélica, almendra.",
+    "precio": 11900,
+    "familia": "argentino"
+   },
+   {
+    "id": "gin-aconcagua-cardamon-special",
+    "categoria": "gin",
+    "nombre": "Aconcagua Cardamon Special",
+    "descripcion": "Cardamomo, bayas enebro, lemon glass, semilla coriandro, raíz de regaliz, raíz angélica, almendra.",
+    "precio": 11900,
+    "familia": "argentino"
+   },
+   {
+    "id": "gin-brokers-genuine",
+    "categoria": "gin",
+    "nombre": "Brokers Genuine",
+    "descripcion": "Enebro y notas cítricas ricas.",
+    "precio": 10300,
+    "familia": "clasico"
+   },
+   {
+    "id": "gin-beefeater",
+    "categoria": "gin",
+    "nombre": "Beefeater",
+    "descripcion": "Notas fuertes de enebro y toques de naranja especiadas.",
+    "precio": 12700,
+    "familia": "clasico"
+   },
+   {
+    "id": "gin-tanqueray",
+    "categoria": "gin",
+    "nombre": "Tanqueray",
+    "descripcion": "Notas de enebro y fuerte presencia, herbal y regalíz.",
+    "precio": 13300,
+    "familia": "clasico"
+   },
+   {
+    "id": "gin-tanqueray-sevilla",
+    "categoria": "gin",
+    "nombre": "Tanqueray Sevilla",
+    "descripcion": "Notas de naranja.",
+    "precio": 13300,
+    "familia": "clasico"
+   },
+   {
+    "id": "gin-tanqueray-royale",
+    "categoria": "gin",
+    "nombre": "Tanqueray Royale",
+    "descripcion": "French dark berry y vainilla.",
+    "precio": 13900,
+    "familia": "clasico"
+   },
+   {
+    "id": "gin-bombay-sapphire",
+    "categoria": "gin",
+    "nombre": "Bombay Sapphire",
+    "descripcion": "Perfume suave de frutas secas, limón y enebro.",
+    "precio": 14600,
+    "familia": "clasico"
+   },
+   {
+    "id": "gin-bull-dog",
+    "categoria": "gin",
+    "nombre": "Bull Dog",
+    "descripcion": "12 ingredientes botánicos.",
+    "precio": 19700,
+    "familia": "clasico"
+   },
+   {
+    "id": "gin-le-tribute",
+    "categoria": "gin",
+    "nombre": "Le Tribute",
+    "descripcion": "Aceite de citronela, naranja, limón, pomelo, mandarina, lima.",
+    "precio": 43200,
+    "familia": "clasico"
+   },
+   {
+    "id": "gin-hendricks",
+    "categoria": "gin",
+    "nombre": "Hendrick’s",
+    "descripcion": "11 plantas botánicas, raíces, flores, semillas y frutos.",
+    "precio": 28200,
+    "familia": "moderno"
+   },
+   {
+    "id": "gin-monkey-47",
+    "categoria": "gin",
+    "nombre": "Monkey 47",
+    "descripcion": "Notas de kéfir y frutos rojos ácidos. Especiado y picante.",
+    "precio": 30700,
+    "familia": "moderno"
+   },
+   {
+    "id": "gin-hendricks-neptunia",
+    "categoria": "gin",
+    "nombre": "Hendrick’s Neptunia",
+    "descripcion": "Notas de pepino, rosas y cítricos ligeramente picante con pimientos.",
+    "precio": 30000,
+    "familia": "moderno"
+   },
+   {
+    "id": "gin-hendricks-lunar",
+    "categoria": "gin",
+    "nombre": "Hendrick’s Lunar",
+    "descripcion": "Esencia floral, especias sutiles y cítricos.",
+    "precio": 30000,
+    "familia": "moderno"
+   },
+   {
+    "id": "gin-the-botanist",
+    "categoria": "gin",
+    "nombre": "The Botanist",
+    "descripcion": "31 botánicos con aroma de flores y enebro, hierbas, especias.",
+    "precio": 43200,
+    "familia": "moderno"
+   },
+   {
+    "id": "gin-mare-capri",
+    "categoria": "gin",
+    "nombre": "Mare Capri",
+    "descripcion": "Cítrico y refrescante, con perfumes mediterraneos y bergamota.",
+    "precio": 49900,
+    "familia": "moderno"
+   },
+   {
+    "id": "tonica-schweppes-350ml",
+    "categoria": "tonica",
+    "nombre": "Schweppes 350 ml",
+    "descripcion": "",
+    "precio": 4900
+   },
+   {
+    "id": "tonica-schweppes-zero-350ml",
+    "categoria": "tonica",
+    "nombre": "Schweppes Zero 350 ml",
+    "descripcion": "",
+    "precio": 4900
+   },
+   {
+    "id": "tonica-san-pellegrino-330ml",
+    "categoria": "tonica",
+    "nombre": "San Pellegrino 330 ml",
+    "descripcion": "",
+    "precio": 6600
+   },
+   {
+    "id": "trago-cynar-julep",
+    "categoria": "tragos",
+    "nombre": "Cynar Julep",
+    "descripcion": "Cynar, menta, almíbar, jugo de limón, jugo pomelo.",
+    "precio": 10200
+   },
+   {
+    "id": "trago-fernet-cola",
+    "categoria": "tragos",
+    "nombre": "Fernet Cola",
+    "descripcion": "Fernet Branca, Coca Cola.",
+    "precio": 10200
+   },
+   {
+    "id": "trago-gin-and-tonic",
+    "categoria": "tragos",
+    "nombre": "Gin tonic",
+    "descripcion": "Gin, agua tónica, limón.",
+    "precio": 10300
+   },
+   {
+    "id": "trago-garibaldi",
+    "categoria": "tragos",
+    "nombre": "Garibaldi",
+    "descripcion": "Campari, jugo de naranja.",
+    "precio": 10800
+   },
+   {
+    "id": "trago-caipirinha",
+    "categoria": "tragos",
+    "nombre": "Caipirinha",
+    "descripcion": "Cachaça, lima, azúcar.",
+    "precio": 10800
+   },
+   {
+    "id": "trago-aperol-summer",
+    "categoria": "tragos",
+    "nombre": "Aperol Summer",
+    "descripcion": "Aperol, espumante, maracuyá, almíbar de jengibre, frutos rojos.",
+    "precio": 11200
+   },
+   {
+    "id": "trago-negroni",
+    "categoria": "tragos",
+    "nombre": "Negroni",
+    "descripcion": "Gin, Campari, vermouth rosso, garnish de naranja.",
+    "precio": 11100
+   },
+   {
+    "id": "trago-negroni-sbagliato",
+    "categoria": "tragos",
+    "nombre": "Negroni Sbagliato",
+    "descripcion": "Espumante, Campari, vermouth rosso, rodaja de naranja.",
+    "precio": 11100
+   },
+   {
+    "id": "trago-aperol-spritz",
+    "categoria": "tragos",
+    "nombre": "Aperol Spritz",
+    "descripcion": "Aperol, espumante, rodaja de naranja, dash de soda.",
+    "precio": 11200
+   },
+   {
+    "id": "trago-kir-royal",
+    "categoria": "tragos",
+    "nombre": "Kir Royal",
+    "descripcion": "Espumante extra brut, licor de cassis, cassis.",
+    "precio": 12100
+   },
+   {
+    "id": "trago-caipiroska",
+    "categoria": "tragos",
+    "nombre": "Caipiroska",
+    "descripcion": "Vodka, lima, azúcar.",
+    "precio": 12900
+   },
+   {
+    "id": "trago-pisco-sour",
+    "categoria": "tragos",
+    "nombre": "Pisco Sour",
+    "descripcion": "Pisco, limón, almíbar, clara de huevo, Bitter Angostura.",
+    "precio": 13700
+   },
+   {
+    "id": "trago-cuba-libre",
+    "categoria": "tragos",
+    "nombre": "Cuba Libre",
+    "descripcion": "Havana Especial, Coca Cola y rodaja de limón.",
+    "precio": 15200
+   },
+   {
+    "id": "trago-moscow-mule",
+    "categoria": "tragos",
+    "nombre": "Moscow Mule",
+    "descripcion": "Absolut Blue y jugo de lima.",
+    "precio": 15200
+   },
+   {
+    "id": "trago-expresso-martini",
+    "categoria": "tragos",
+    "nombre": "Expresso Martini",
+    "descripcion": "Café, vodka, licor de café, almíbar.",
+    "precio": 15200
+   },
+   {
+    "id": "trago-fresh",
+    "categoria": "tragos",
+    "nombre": "Fresh (Sin Alcohol)",
+    "descripcion": "Pepino, menta, azúcar y agua.",
+    "precio": 12400
+   },
+   {
+    "id": "trago-red-passion",
+    "categoria": "tragos",
+    "nombre": "Red Passion (Sin Alcohol)",
+    "descripcion": "Maracuyá, frutos rojos, lima, azúcar y agua.",
+    "precio": 8200
+   },
+   {
+    "id": "cerveza-imperial-lager",
+    "categoria": "cerveza",
+    "nombre": "Imperial Lager",
+    "descripcion": "",
+    "precio": 7700
+   },
+   {
+    "id": "cerveza-imperial-amber-lager",
+    "categoria": "cerveza",
+    "nombre": "Imperial Amber Lager",
+    "descripcion": "",
+    "precio": 7700
+   },
+   {
+    "id": "cerveza-imperial-ipa",
+    "categoria": "cerveza",
+    "nombre": "Imperial Ipa",
+    "descripcion": "",
+    "precio": 7700
+   },
+   {
+    "id": "cerveza-blue-moon",
+    "categoria": "cerveza",
+    "nombre": "Blue Moon",
+    "descripcion": "",
+    "precio": 9500
+   },
+   {
+    "id": "cerveza-imperial-golden",
+    "categoria": "cerveza",
+    "nombre": "Imperial Golden",
+    "descripcion": "",
+    "precio": 7700
+   },
+   {
+    "id": "trago-marea-negra",
+    "categoria": "tragos",
+    "nombre": "Marea Negra",
+    "descripcion": "Ron, licor de casís, pomelo, agua con gas.",
+    "precio": 12500
+   },
+   {
+    "id": "trago-kesar",
+    "categoria": "tragos",
+    "nombre": "Kesar",
+    "descripcion": "Absolut, mango, ananá, lima, frutos rojos.",
+    "precio": 10500
+   },
+   {
+    "id": "trago-quina-tonic",
+    "categoria": "tragos",
+    "nombre": "Quina Tonic",
+    "descripcion": "Gin, pepino, menta, tónica.",
+    "precio": 11200
+   },
+   {
+    "id": "trago-ramazonia",
+    "categoria": "tragos",
+    "nombre": "Ramazonia",
+    "descripcion": "Ramazzotti, Absolut Mango, maracuyá, jugo de naranja, almíbar.",
+    "precio": 11000
+   },
+   {
+    "id": "trago-tinto-de-verano",
+    "categoria": "tragos",
+    "nombre": "Tinto de Verano",
+    "descripcion": "Malbec, Sprite, rodaja de naranja.",
+    "precio": 15200
+   },
+   {
+    "id": "trago-tupi",
+    "categoria": "tragos",
+    "nombre": "Tupí",
+    "descripcion": "Absolut Blue, maracuyá, lima machacada y naranja.",
+    "precio": 12200
+   },
+   {
+    "id": "whisky-the-famous-grouse",
+    "categoria": "whisky",
+    "nombre": "The Famous Grouse",
+    "descripcion": "",
+    "precio": 9200
+   },
+   {
+    "id": "whisky-ballantines",
+    "categoria": "whisky",
+    "nombre": "Ballantines",
+    "descripcion": "",
+    "precio": 10200
+   },
+   {
+    "id": "whisky-old-parr-12-years",
+    "categoria": "whisky",
+    "nombre": "Old Parr 12 Years",
+    "descripcion": "",
+    "precio": 13000
+   },
+   {
+    "id": "whisky-j-w-red-label",
+    "categoria": "whisky",
+    "nombre": "J. Walker Red Label",
+    "descripcion": "",
+    "precio": 13400
+   },
+   {
+    "id": "whisky-monkey-shoulder",
+    "categoria": "whisky",
+    "nombre": "Monkey Shoulder",
+    "descripcion": "",
+    "precio": 14600
+   },
+   {
+    "id": "whisky-j-w-black-label",
+    "categoria": "whisky",
+    "nombre": "J. Walker Black Label",
+    "descripcion": "",
+    "precio": 20600
+   },
+   {
+    "id": "whisky-j-w-double-black",
+    "categoria": "whisky",
+    "nombre": "J. Walker Double Black",
+    "descripcion": "",
+    "precio": 23100
+   },
+   {
+    "id": "whisky-j-w-gold-label",
+    "categoria": "whisky",
+    "nombre": "J. Walker Gold Label",
+    "descripcion": "",
+    "precio": 28000
+   },
+   {
+    "id": "whisky-glenmorangie-10-years",
+    "categoria": "whisky",
+    "nombre": "Glenmorangie 10 Years",
+    "descripcion": "",
+    "precio": 34400
+   },
+   {
+    "id": "whisky-glenfi-ddich-12-years",
+    "categoria": "whisky",
+    "nombre": "Glenfiddich 12 Years",
+    "descripcion": "",
+    "precio": 35800
+   },
+   {
+    "id": "whisky-glenmorangie-original",
+    "categoria": "whisky",
+    "nombre": "Glenmorangie Original",
+    "descripcion": "",
+    "precio": 42200
+   },
+   {
+    "id": "whisky-dewars-15-years",
+    "categoria": "whisky",
+    "nombre": "Dewars 15 Years",
+    "descripcion": "",
+    "precio": 42600
+   },
+   {
+    "id": "whisky-talisker-10-years",
+    "categoria": "whisky",
+    "nombre": "Talisker 10 Years",
+    "descripcion": "",
+    "precio": 47600
+   },
+   {
+    "id": "whisky-j-w-18-years",
+    "categoria": "whisky",
+    "nombre": "J. Walker 18 Years",
+    "descripcion": "",
+    "precio": 48400
+   },
+   {
+    "id": "whisky-j-w-green",
+    "categoria": "whisky",
+    "nombre": "J. Walker Green",
+    "descripcion": "",
+    "precio": 60900
+   },
+   {
+    "id": "whisky-the-macallan-12-years",
+    "categoria": "whisky",
+    "nombre": "The Macallan 12 Years",
+    "descripcion": "",
+    "precio": 79500
+   },
+   {
+    "id": "whisky-carduh-12-years",
+    "categoria": "whisky",
+    "nombre": "Cardhu 12 Years",
+    "descripcion": "",
+    "precio": 79500
+   },
+   {
+    "id": "whisky-aberfeldy-16-years",
+    "categoria": "whisky",
+    "nombre": "Aberfeldy 16 Years",
+    "descripcion": "",
+    "precio": 79600
+   },
+   {
+    "id": "whisky-glen-deveron-20-years",
+    "categoria": "whisky",
+    "nombre": "Glen Deveron 20 Years",
+    "descripcion": "",
+    "precio": 87300
+   },
+   {
+    "id": "whisky-royal-salute-21-years",
+    "categoria": "whisky",
+    "nombre": "Royal Salute 21 Years",
+    "descripcion": "",
+    "precio": 92800
+   },
+   {
+    "id": "whisky-j-w-blue-label",
+    "categoria": "whisky",
+    "nombre": "J. Walker Blue Label",
+    "descripcion": "",
+    "precio": 94400
+   },
+   {
+    "id": "whisky-macallan-nro-5",
+    "categoria": "whisky",
+    "nombre": "Macallan Nro 5",
+    "descripcion": "(Limited edition)",
+    "precio": 214700
+   },
+   {
+    "id": "whisky-jim-beam-white",
+    "categoria": "whisky",
+    "nombre": "Jim Beam White",
+    "descripcion": "",
+    "precio": 14100
+   },
+   {
+    "id": "whisky-makers-mark",
+    "categoria": "whisky",
+    "nombre": "Makers Mark",
+    "descripcion": "",
+    "precio": 16300
+   },
+   {
+    "id": "whisky-jack-daniel-s",
+    "categoria": "whisky",
+    "nombre": "Jack Daniel’s",
+    "descripcion": "",
+    "precio": 17100
+   },
+   {
+    "id": "whisky-jack-daniel-s-honey",
+    "categoria": "whisky",
+    "nombre": "Jack Daniel’s Honey",
+    "descripcion": "",
+    "precio": 18600
+   },
+   {
+    "id": "whisky-gentleman-jack",
+    "categoria": "whisky",
+    "nombre": "Gentleman Jack",
+    "descripcion": "",
+    "precio": 56600
+   },
+   {
+    "id": "whisky-jameson-irish-whiskey",
+    "categoria": "whisky",
+    "nombre": "Jameson Irish Whiskey",
+    "descripcion": "",
+    "precio": 11100
+   },
+   {
+    "id": "whisky-tullamore-trile-destilled",
+    "categoria": "whisky",
+    "nombre": "Tullamore Triple Distilled",
+    "descripcion": "",
+    "precio": 12100
+   },
+   {
+    "id": "whisky-the-chita-single-grain",
+    "categoria": "whisky",
+    "nombre": "The Chita Single Grain",
+    "descripcion": "",
+    "precio": 81800
+   },
+   {
+    "id": "whisky-the-kurayoshi",
+    "categoria": "whisky",
+    "nombre": "The Kurayoshi",
+    "descripcion": "",
+    "precio": 85200
+   },
+   {
+    "id": "whisky-hibiki-master-select",
+    "categoria": "whisky",
+    "nombre": "Hibiki Master Select",
+    "descripcion": "",
+    "precio": 95400
+   },
+   {
+    "id": "destilados-havana-club-3-anos",
+    "categoria": "destilados",
+    "nombre": "Havana Club 3 Años",
+    "descripcion": "",
+    "precio": 7400
+   },
+   {
+    "id": "destilados-havana-club-especial",
+    "categoria": "destilados",
+    "nombre": "Havana Club Especial",
+    "descripcion": "Dorado (Cuba)",
+    "precio": 8900
+   },
+   {
+    "id": "destilados-havana-club-7-cuba",
+    "categoria": "destilados",
+    "nombre": "Havana Club 7 (Cuba)",
+    "descripcion": "",
+    "precio": 13500
+   },
+   {
+    "id": "destilados-havana-seleccion",
+    "categoria": "destilados",
+    "nombre": "Havana Seleccion",
+    "descripcion": "De maestros",
+    "precio": 21400
+   },
+   {
+    "id": "destilados-diplomatico-venezuela",
+    "categoria": "destilados",
+    "nombre": "Diplomatico (Venezuela)",
+    "descripcion": "Reserva exclusiva",
+    "precio": 24300
+   },
+   {
+    "id": "destilados-diplomatico-antuano",
+    "categoria": "destilados",
+    "nombre": "Diplomatico Antuano",
+    "descripcion": "",
+    "precio": 24300
+   },
+   {
+    "id": "destilados-zacapa-guatemala",
+    "categoria": "destilados",
+    "nombre": "Zacapa (Guatemala)",
+    "descripcion": "",
+    "precio": 161800
+   },
+   {
+    "id": "destilados-jose-cuervo-silver-mexico",
+    "categoria": "destilados",
+    "nombre": "Jose Cuervo Silver (Mexico)",
+    "descripcion": "",
+    "precio": 21700
+   },
+   {
+    "id": "destilados-corralejo-mexico",
+    "categoria": "destilados",
+    "nombre": "Corralejo (Mexico)",
+    "descripcion": "",
+    "precio": 33300
+   },
+   {
+    "id": "destilados-absolut",
+    "categoria": "destilados",
+    "nombre": "Absolut",
+    "descripcion": "",
+    "precio": 12200
+   },
+   {
+    "id": "destilados-ciroc",
+    "categoria": "destilados",
+    "nombre": "Ciroc",
+    "descripcion": "",
+    "precio": 40000
+   },
+   {
+    "id": "destilados-grey-goose",
+    "categoria": "destilados",
+    "nombre": "Grey Goose",
+    "descripcion": "",
+    "precio": 40000
+   },
+   {
+    "id": "destilados-borghetti",
+    "categoria": "destilados",
+    "nombre": "Borghetti",
+    "descripcion": "",
+    "precio": 8600
+   },
+   {
+    "id": "destilados-drambuie",
+    "categoria": "destilados",
+    "nombre": "Drambuie",
+    "descripcion": "",
+    "precio": 9100
+   },
+   {
+    "id": "destilados-baileys",
+    "categoria": "destilados",
+    "nombre": "Baileys",
+    "descripcion": "",
+    "precio": 10500
+   },
+   {
+    "id": "destilados-sheridans",
+    "categoria": "destilados",
+    "nombre": "Sheridans",
+    "descripcion": "",
+    "precio": 12200
+   },
+   {
+    "id": "destilados-amarula",
+    "categoria": "destilados",
+    "nombre": "Amarula",
+    "descripcion": "",
+    "precio": 12700
+   },
+   {
+    "id": "destilados-licor-43-espanol",
+    "categoria": "destilados",
+    "nombre": "Licor 43 Español",
+    "descripcion": "",
+    "precio": 13400
+   },
+   {
+    "id": "destilados-amaretto",
+    "categoria": "destilados",
+    "nombre": "Amaretto",
+    "descripcion": "",
+    "precio": 13400
+   },
+   {
+    "id": "destilados-cointreau",
+    "categoria": "destilados",
+    "nombre": "Cointreau",
+    "descripcion": "",
+    "precio": 21000
+   },
+   {
+    "id": "destilados-grappa-luxardo",
+    "categoria": "destilados",
+    "nombre": "Grappa Luxardo",
+    "descripcion": "",
+    "precio": 20000
+   },
+   {
+    "id": "destilados-limoncello-luxardo",
+    "categoria": "destilados",
+    "nombre": "Limoncello Luxardo",
+    "descripcion": "",
+    "precio": 20000
+   },
+   {
+    "id": "destilados-remy-martin",
+    "categoria": "destilados",
+    "nombre": "Remy Martin",
+    "descripcion": "",
+    "precio": 64500
+   },
+   {
+    "id": "destilados-capel-chile",
+    "categoria": "destilados",
+    "nombre": "Capel Chile",
+    "descripcion": "",
+    "precio": 11700
+   },
+   {
+    "id": "destilados-barsol-peru",
+    "categoria": "destilados",
+    "nombre": "Barsol Perú",
+    "descripcion": "",
+    "precio": 21100
+   },
+   {
+    "id": "destilados-waqar-chile",
+    "categoria": "destilados",
+    "nombre": "Waqar Chile",
+    "descripcion": "",
+    "precio": 42500
+   },
+   {
+    "id": "vinos-espumosos-salentein-extra-brut",
+    "categoria": "vinos-espumosos",
+    "nombre": "Salentein Extra Brut",
+    "descripcion": "Chardonnay - Pinot Noir · Salentein · Tunuyán, Valle de Uco",
+    "precio": 25500
+   },
+   {
+    "id": "vinos-espumosos-chandon-cuvee-reserve-blanc-de-n",
+    "categoria": "vinos-espumosos",
+    "nombre": "Chandon Cuvée Reserve Blanc de Noirs",
+    "descripcion": "Pinot Noir · Chandon · Luján de Cuyo, Mendoza",
+    "precio": 43400
+   },
+   {
+    "id": "vinos-espumosos-cruzat-cuvee-extra-brut",
+    "categoria": "vinos-espumosos",
+    "nombre": "Cruzat Cuvee Extra Brut",
+    "descripcion": "Chardonnay - Pinot Noir · Cruzat · Tupungato, Valle de Uco",
+    "precio": 45200
+   },
+   {
+    "id": "vinos-espumosos-baron-b",
+    "categoria": "vinos-espumosos",
+    "nombre": "Baron B",
+    "descripcion": "Extra Brut Cuvée Spéciale · Chandon · Valle de Uco, Mendoza",
+    "precio": 50500
+   },
+   {
+    "id": "vinos-espumosos-dv-catena-nature",
+    "categoria": "vinos-espumosos",
+    "nombre": "DV Catena Nature",
+    "descripcion": "Chardonnay - Pinot Noir · Catena Zapata · Tupungato, Valle de Uco",
+    "precio": 52700
+   },
+   {
+    "id": "vinos-espumosos-boheme-brut-nature",
+    "categoria": "vinos-espumosos",
+    "nombre": "Boheme Brut Nature",
+    "descripcion": "Pinot Noir - Pinot Meunier - Chardonnay · Luigi Bosca · Las Compuertas, Luján de Cuyo",
+    "precio": 74500
+   },
+   {
+    "id": "vinos-espumosos-moet-chandon",
+    "categoria": "vinos-espumosos",
+    "nombre": "Moet & Chandon",
+    "descripcion": "Pinot Noir - Pinot Meunier - Chardonnay · Moet & Chandon · Epernay, Marne",
+    "precio": 240000
+   },
+   {
+    "id": "vinos-espumosos-pommery",
+    "categoria": "vinos-espumosos",
+    "nombre": "Pommery",
+    "descripcion": "Pinot Noir - Pinot Meunier - Chardonnay · Pommery · Reims, Champagne",
+    "precio": 280800
+   },
+   {
+    "id": "vinos-blancos-diamandes-perlita",
+    "categoria": "vinos-blancos",
+    "nombre": "Diamandes Perlita",
+    "descripcion": "Chardonnay · Diamandes · Vista Flores, Tunuyán",
+    "precio": 14700
+   },
+   {
+    "id": "vinos-blancos-chakana-estate-selection-chardonna",
+    "categoria": "vinos-blancos",
+    "nombre": "Chakana Estate Selection Chardonnay",
+    "descripcion": "Chardonnay · Chakana · Valle de Uco, Mendoza",
+    "precio": 24750
+   },
+   {
+    "id": "vinos-blancos-homo-felix-chardonnay",
+    "categoria": "vinos-blancos",
+    "nombre": "Homo Felix Chardonnay",
+    "descripcion": "Chardonnay · Homo Felix · Los Chacayes, Valle de Uco",
+    "precio": 34900
+   },
+   {
+    "id": "vinos-blancos-dv-catena-chardonnay-chardonnay",
+    "categoria": "vinos-blancos",
+    "nombre": "DV Catena Chardonnay - Chardonnay",
+    "descripcion": "Chardonnay · Catena Zapata Villa Bastias y Agrelo · Tupungato y Luján de Cuyo, Mendoza",
+    "precio": 37000
+   },
+   {
+    "id": "vinos-blancos-hermandad",
+    "categoria": "vinos-blancos",
+    "nombre": "Hermandad",
+    "descripcion": "Chardonnay · Falasco Wines · Valle de Uco, Mendoza",
+    "precio": 42700
+   },
+   {
+    "id": "vinos-blancos-luigi-bosca-de-sangre-chardonnay",
+    "categoria": "vinos-blancos",
+    "nombre": "Luigi Bosca de Sangre Chardonnay",
+    "descripcion": "Chardonnay · Luigi Bosca · Valle de Uco, Mendoza",
+    "precio": 45400
+   },
+   {
+    "id": "vinos-blancos-ribera-del-cuarzo-chardonnay",
+    "categoria": "vinos-blancos",
+    "nombre": "Ribera del Cuarzo Chardonnay",
+    "descripcion": "Chardonnay · Ribera del Cuarzo · Valle Azul, el Cuy",
+    "precio": 48300
+   },
+   {
+    "id": "vinos-blancos-bressano",
+    "categoria": "vinos-blancos",
+    "nombre": "Bressano",
+    "descripcion": "Chardonnay · Falasco Wines · El Peral, Gualtallary y Vista Flores",
+    "precio": 64000
+   },
+   {
+    "id": "vinos-blancos-dona-paula",
+    "categoria": "vinos-blancos",
+    "nombre": "Doña Paula",
+    "descripcion": "Sauvignon Blanc · Doña Paula · Gualtallary, Mendoza",
+    "precio": 28500
+   },
+   {
+    "id": "vinos-blancos-mariflor",
+    "categoria": "vinos-blancos",
+    "nombre": "Mariflor",
+    "descripcion": "Sauvignon Blanc · Rolland · Tunuyán, Valle de Uco",
+    "precio": 28750
+   },
+   {
+    "id": "vinos-blancos-sarapura-blend-de-blancas",
+    "categoria": "vinos-blancos",
+    "nombre": "Sarapura Blend de Blancas",
+    "descripcion": "Sauvignon Blanc - Semillón - Chardonnay · Sarapura · Tupungato, Valle de Uco",
+    "precio": 35850
+   },
+   {
+    "id": "vinos-blancos-blanchard-lurton-grand-vin",
+    "categoria": "vinos-blancos",
+    "nombre": "Blanchard & Lurton Grand Vin",
+    "descripcion": "Tocai - Viognier - Pinot Gris - Chardonnay · Blanchard & Lurton · Chacayes, Vista de Flores y Valle de Uco",
+    "precio": 63830
+   },
+   {
+    "id": "vinos-blancos-diamandes-viognier",
+    "categoria": "vinos-blancos",
+    "nombre": "Diamandes - Viognier",
+    "descripcion": "Otras Variedades · Diamandes · Tunuyán, Valle de Uco",
+    "precio": 25500
+   },
+   {
+    "id": "vinos-blancos-costa-pampa-albarino",
+    "categoria": "vinos-blancos",
+    "nombre": "Costa & Pampa - Albariño",
+    "descripcion": "Otras Variedades · Trapiche · Chapadmalal, Buenos Aires",
+    "precio": 33870
+   },
+   {
+    "id": "vinos-blancos-poligonos-semillon",
+    "categoria": "vinos-blancos",
+    "nombre": "Polígonos - Semillón",
+    "descripcion": "Otras Variedades · Zuccardi · El Peral, Tupungato",
+    "precio": 43400
+   },
+   {
+    "id": "vinos-blancos-laborum-de-parcela-finca-el-retiro",
+    "categoria": "vinos-blancos",
+    "nombre": "Laborum de Parcela, Finca el Retiro - Torrontés",
+    "descripcion": "Otras Variedades · El Porvenir · Cafayate, Valles Calchaquies",
+    "precio": 44300
+   },
+   {
+    "id": "vinos-blancos-poligonos-verdejo",
+    "categoria": "vinos-blancos",
+    "nombre": "Polígonos - Verdejo",
+    "descripcion": "Otras Variedades · Zuccardi · San Pablo, Tupungato",
+    "precio": 47200
+   },
+   {
+    "id": "vinos-blancos-pequenas-fermentaciones-naranjo",
+    "categoria": "vinos-blancos",
+    "nombre": "Pequeñas Fermentaciones Naranjo",
+    "descripcion": "Torrontés - Moscatel · El Porvenir Cafayate · Valles Calchaquies, Salta",
+    "precio": 42700
+   },
+   {
+    "id": "vinos-rosados-chakana-nuna-rose",
+    "categoria": "vinos-rosados",
+    "nombre": "Chakana Nuna Rosé",
+    "descripcion": "Syrah - Malbec - Tannat · Chakana · Agrelo, Luján de Cuyo",
+    "precio": 28500
+   },
+   {
+    "id": "vinos-rosados-antonieta-rose",
+    "categoria": "vinos-rosados",
+    "nombre": "Antonieta Rosé",
+    "descripcion": "Pinot Noir · Falasco Wines · Los Chacayes, Tunuyán",
+    "precio": 29000
+   },
+   {
+    "id": "vinos-rosados-rose-sil-vous-plait",
+    "categoria": "vinos-rosados",
+    "nombre": "Rosé S’il Vous Plait",
+    "descripcion": "Merlot · Pulenta · Agrelo, Luján de Cuyo",
+    "precio": 30800
+   },
+   {
+    "id": "vinos-rosados-kaiken-nude-garnacha",
+    "categoria": "vinos-rosados",
+    "nombre": "Kaiken Nude Garnacha",
+    "descripcion": "Kaiken · Agrelo, Luján de Cuyo",
+    "precio": 37800
+   },
+   {
+    "id": "vinos-rosados-cuchillo-de-palo-rose",
+    "categoria": "vinos-rosados",
+    "nombre": "Cuchillo de Palo Rosé",
+    "descripcion": "Pinot Noir · Cuchillo de Palo · Vistaflores, Tunuyán",
+    "precio": 39400
+   },
+   {
+    "id": "vinos-rosados-a-rose-is-a-rose-is-a-rose",
+    "categoria": "vinos-rosados",
+    "nombre": "A Rosé is a Rosé, is a Rosé",
+    "descripcion": "Pinot Noir · Luigi Bosca · Lujan de Cuyo Mendoza",
+    "precio": 43600
+   },
+   {
+    "id": "vinos-rosados-susana-balbo-signature-rose-malbec",
+    "categoria": "vinos-rosados",
+    "nombre": "Susana Balbo Signature Rosé, Malbec",
+    "descripcion": "Pinot Noir · Susana Balbo · Los Chacayes y Gualtallary, Valle de Uco",
+    "precio": 46500
+   },
+   {
+    "id": "vinos-tintos-cuchillo-de-palo-malbec",
+    "categoria": "vinos-tintos",
+    "nombre": "Cuchillo de Palo Malbec",
+    "descripcion": "Malbec · Cuchillo de Palo · Vistaflores, Tunuyán",
+    "precio": 21550
+   },
+   {
+    "id": "vinos-tintos-la-celia-pioneer",
+    "categoria": "vinos-tintos",
+    "nombre": "La Celia Pioneer",
+    "descripcion": "Malbec · La Celia · Valle de Uco, Mendoza",
+    "precio": 25300
+   },
+   {
+    "id": "vinos-tintos-nuna-malbec",
+    "categoria": "vinos-tintos",
+    "nombre": "Nuna Malbec",
+    "descripcion": "Malbec · Chakana · Agrelo, Luján de Cuyo",
+    "precio": 25500
+   },
+   {
+    "id": "vinos-tintos-numina-malbec",
+    "categoria": "vinos-tintos",
+    "nombre": "Numina Malbec",
+    "descripcion": "Malbec · Salentein · Valle de Uco, Mendoza",
+    "precio": 26500
+   },
+   {
+    "id": "vinos-tintos-fausto",
+    "categoria": "vinos-tintos",
+    "nombre": "Fausto",
+    "descripcion": "Malbec · Falasco Wines · Vistaflores, Tunuyán",
+    "precio": 26850
+   },
+   {
+    "id": "vinos-tintos-hey-malbec",
+    "categoria": "vinos-tintos",
+    "nombre": "Hey Malbec",
+    "descripcion": "Malbec · Riccitelli · Luján de Cuyo, Mendoza",
+    "precio": 31500
+   },
+   {
+    "id": "vinos-tintos-punta-de-flechas",
+    "categoria": "vinos-tintos",
+    "nombre": "Punta de Flechas",
+    "descripcion": "Malbec · Flecha de los Andes · Tunuyán, Valle de Uco",
+    "precio": 34500
+   },
+   {
+    "id": "vinos-tintos-pyros-block-4-malbec",
+    "categoria": "vinos-tintos",
+    "nombre": "Pyros Block 4 Malbec",
+    "descripcion": "Malbec · Salentein · Valle de Pedernal, San Juan",
+    "precio": 38000
+   },
+   {
+    "id": "vinos-tintos-terraza-de-los-andes-origen-los-cha",
+    "categoria": "vinos-tintos",
+    "nombre": "Terraza de los Andes Origen los Chacayes Malbec",
+    "descripcion": "Malbec · Terraza de los Andes · Valle de Uco, Mendoza",
+    "precio": 40000
+   },
+   {
+    "id": "vinos-tintos-chakana-singulares-organico-finca-l",
+    "categoria": "vinos-tintos",
+    "nombre": "Chakana Singulares Orgánico, Finca los Cedros",
+    "descripcion": "Malbec · Chakana · Paraje Altamira, Valle de Uco",
+    "precio": 40300
+   },
+   {
+    "id": "vinos-tintos-la-celia-elite",
+    "categoria": "vinos-tintos",
+    "nombre": "La Celia Elite",
+    "descripcion": "Malbec · La Celia · Valle de Uco, Paraje Altamira",
+    "precio": 40700
+   },
+   {
+    "id": "vinos-tintos-luigi-bosca-de-sangre-malbec-valle-",
+    "categoria": "vinos-tintos",
+    "nombre": "Luigi Bosca de Sangre Malbec Valle de Uco",
+    "descripcion": "Malbec · Luigi Bosca · Valle de Uco, Mendoza",
+    "precio": 43000
+   },
+   {
+    "id": "vinos-tintos-piattelli-single-vineyard",
+    "categoria": "vinos-tintos",
+    "nombre": "Piattelli Single Vineyard",
+    "descripcion": "Malbec · Piattelli · Agrelo, Luján de Cuyo",
+    "precio": 47500
+   },
+   {
+    "id": "vinos-tintos-benmarco-sin-limites",
+    "categoria": "vinos-tintos",
+    "nombre": "Benmarco sin Límites",
+    "descripcion": "Malbec · Susana Balbo · Valle de Uco, Mendoza",
+    "precio": 49400
+   },
+   {
+    "id": "vinos-tintos-chakana-ayni",
+    "categoria": "vinos-tintos",
+    "nombre": "Chakana Ayni",
+    "descripcion": "Malbec · Chakana · Paraje Altamira, Valle de Uco",
+    "precio": 55000
+   },
+   {
+    "id": "vinos-tintos-flecha-de-los-andes-gran-malbec",
+    "categoria": "vinos-tintos",
+    "nombre": "Flecha de los Andes Gran Malbec",
+    "descripcion": "Malbec · Flecha de los Andes · Tunuyán, Valle de Uco",
+    "precio": 58400
+   },
+   {
+    "id": "vinos-tintos-araucana-rio-de-los-ciervos",
+    "categoria": "vinos-tintos",
+    "nombre": "Araucana Río de los Ciervos",
+    "descripcion": "Malbec · Ribera del Cuarzo · Valle Azul, Rio Negro",
+    "precio": 59900
+   },
+   {
+    "id": "vinos-tintos-a-lisa-2024",
+    "categoria": "vinos-tintos",
+    "nombre": "A Lisa 2024",
+    "descripcion": "Malbec · Noemia · Valle Azul, Rio Negro",
+    "precio": 60750
+   },
+   {
+    "id": "vinos-tintos-de-angeles-gran-malbec",
+    "categoria": "vinos-tintos",
+    "nombre": "De Angeles Gran Malbec",
+    "descripcion": "Malbec · Vistalba · Luján de Cuyo, Mendoza",
+    "precio": 62200
+   },
+   {
+    "id": "vinos-tintos-val-de-flores",
+    "categoria": "vinos-tintos",
+    "nombre": "Val de Flores",
+    "descripcion": "Malbec · Rolland Vistaflores · Tunuyán, Valle de Uco",
+    "precio": 77300
+   },
+   {
+    "id": "vinos-tintos-lorenzo-lo-sagrado",
+    "categoria": "vinos-tintos",
+    "nombre": "Lorenzo Lo Sagrado",
+    "descripcion": "Malbec · Lorenzo de Agrelo · Alto Agrelo, Luján de Cuyo",
+    "precio": 78800
+   },
+   {
+    "id": "vinos-tintos-terraza-de-los-andes-grand-malbec",
+    "categoria": "vinos-tintos",
+    "nombre": "Terraza de los Andes Grand Malbec",
+    "descripcion": "Malbec · Terraza de los Andes · Estate Grown, Luján de Cuyo",
+    "precio": 79300
+   },
+   {
+    "id": "vinos-tintos-bramare-lujan-de-cuyo",
+    "categoria": "vinos-tintos",
+    "nombre": "Bramare Luján de Cuyo",
+    "descripcion": "Malbec · Viña Cobos · Luján de Cuyo, Mendoza",
+    "precio": 87200
+   },
+   {
+    "id": "vinos-tintos-appellation",
+    "categoria": "vinos-tintos",
+    "nombre": "Appellation",
+    "descripcion": "Malbec · Alto las Hormigas · Paraje Altamira, Valle de Uco. Mendoza",
+    "precio": 90000
+   },
+   {
+    "id": "vinos-tintos-ribera-del-cuarzo",
+    "categoria": "vinos-tintos",
+    "nombre": "Ribera del Cuarzo",
+    "descripcion": "Malbec · Ribera del Cuarzo · Valle Azul, Rio Negro",
+    "precio": 91600
+   },
+   {
+    "id": "vinos-tintos-yacochuya",
+    "categoria": "vinos-tintos",
+    "nombre": "Yacochuya",
+    "descripcion": "Malbec · M. Rolland · Valles Calchaquíes, Cafayate",
+    "precio": 107900
+   },
+   {
+    "id": "vinos-tintos-catena-zapata-malbec-argentino",
+    "categoria": "vinos-tintos",
+    "nombre": "Catena Zapata Malbec Argentino",
+    "descripcion": "Malbec · Catena Zapata · Gualtallary y la Consulta, Valle de Uco",
+    "precio": 110450
+   },
+   {
+    "id": "vinos-tintos-republica-del-malbec",
+    "categoria": "vinos-tintos",
+    "nombre": "República del Malbec",
+    "descripcion": "Malbec · Riccitelli · Vistalba, Luján de Cuyo",
+    "precio": 135700
+   },
+   {
+    "id": "vinos-tintos-fede",
+    "categoria": "vinos-tintos",
+    "nombre": "Fede",
+    "descripcion": "Malbec · Lorenzo de Agrelo · Alto Agrelo, Luján de Cuyo",
+    "precio": 168000
+   },
+   {
+    "id": "vinos-tintos-finca-piedra-infinita",
+    "categoria": "vinos-tintos",
+    "nombre": "Finca Piedra Infinita",
+    "descripcion": "Malbec · Zuccardi · Paraje Altamira, San Carlos",
+    "precio": 230000
+   },
+   {
+    "id": "vinos-tintos-chakana-estate-selection",
+    "categoria": "vinos-tintos",
+    "nombre": "Chakana Estate Selection",
+    "descripcion": "Cabernet Franc · Chakana · Valle de Uco, Mendoza",
+    "precio": 24750
+   },
+   {
+    "id": "vinos-tintos-ruca-malen-capitulo-dos",
+    "categoria": "vinos-tintos",
+    "nombre": "Ruca Malen Capitulo Dos",
+    "descripcion": "Cabernet Franc · Ruca Malen · Gualtallary y Villa Bastías, Tupungato",
+    "precio": 26750
+   },
+   {
+    "id": "vinos-tintos-numina-cabernet-franc",
+    "categoria": "vinos-tintos",
+    "nombre": "Numina Cabernet Franc",
+    "descripcion": "Cabernet Franc · Salentein · Valle de Uco, Mendoza",
+    "precio": 30450
+   },
+   {
+    "id": "vinos-tintos-fincas-notables",
+    "categoria": "vinos-tintos",
+    "nombre": "Fincas Notables",
+    "descripcion": "Cabernet Franc · El Esteco · Valle Cafayate, Salta",
+    "precio": 47000
+   },
+   {
+    "id": "vinos-tintos-luigi-bosca-de-sangre-cabernet-fran",
+    "categoria": "vinos-tintos",
+    "nombre": "Luigi Bosca de Sangre Cabernet Franc",
+    "descripcion": "Cabernet Franc · Luigi Bosca · Valle de Uco, Mendoza",
+    "precio": 47700
+   },
+   {
+    "id": "vinos-tintos-nodo",
+    "categoria": "vinos-tintos",
+    "nombre": "Nodo",
+    "descripcion": "Cabernet Franc · Nodo · Gualtallary, Tupungato",
+    "precio": 48000
+   },
+   {
+    "id": "vinos-tintos-martir",
+    "categoria": "vinos-tintos",
+    "nombre": "Martir",
+    "descripcion": "Cabernet Franc · Lorenzo de Agrelo · Alto Agrelo, Luján de Cuyo",
+    "precio": 49400
+   },
+   {
+    "id": "vinos-tintos-winemaker-series",
+    "categoria": "vinos-tintos",
+    "nombre": "Winemaker Series",
+    "descripcion": "Cabernet Franc · Falasco Wines · Los Árboles, Tunuyan",
+    "precio": 55900
+   },
+   {
+    "id": "vinos-tintos-gran-enemigo",
+    "categoria": "vinos-tintos",
+    "nombre": "Gran Enemigo",
+    "descripcion": "Cabernet Franc · Enemigo Wines · Gualtallary Single Vineyard, Tupungato",
+    "precio": 82400
+   },
+   {
+    "id": "vinos-tintos-pulenta-gran-cabernet-franc",
+    "categoria": "vinos-tintos",
+    "nombre": "Pulenta Gran Cabernet Franc",
+    "descripcion": "Cabernet Franc · Pulenta Wines · Alto Agrelo, Luján de Cuyo",
+    "precio": 100000
+   },
+   {
+    "id": "vinos-tintos-vina-cobos-chanares-estate",
+    "categoria": "vinos-tintos",
+    "nombre": "Viña Cobos Chañares Estate",
+    "descripcion": "Cabernet Franc · Viña Cobos · Los Arboles, Tunuyán",
+    "precio": 228000
+   },
+   {
+    "id": "vinos-tintos-chakana-estate-selection-2",
+    "categoria": "vinos-tintos",
+    "nombre": "Chakana Estate Selection",
+    "descripcion": "Cabernet Sauvignon · Chakana · Lujan de Cuyo, Mendoza",
+    "precio": 24750
+   },
+   {
+    "id": "vinos-tintos-felino",
+    "categoria": "vinos-tintos",
+    "nombre": "Felino",
+    "descripcion": "Cabernet Sauvignon · Viña Cobos · Luján de Cuyo y Maipú, Mendoza",
+    "precio": 41900
+   },
+   {
+    "id": "vinos-tintos-susana-balbo-signature",
+    "categoria": "vinos-tintos",
+    "nombre": "Susana Balbo Signature",
+    "descripcion": "Cabernet Sauvignon · Susana Balbo · Luján de Cuyo y Valle de Uco, Mendoza",
+    "precio": 48000
+   },
+   {
+    "id": "vinos-tintos-homo-felix-grand-cabernet-sauvignon",
+    "categoria": "vinos-tintos",
+    "nombre": "Homo Felix Grand Cabernet Sauvignon",
+    "descripcion": "Cabernet Sauvignon · Homo Felix · Agrelo, Valle de Uco",
+    "precio": 49000
+   },
+   {
+    "id": "vinos-tintos-salentein-primus",
+    "categoria": "vinos-tintos",
+    "nombre": "Salentein Primus",
+    "descripcion": "Cabernet Sauvignon · Salentein · Valle de Uco, Mendoza",
+    "precio": 89900
+   },
+   {
+    "id": "vinos-tintos-chakana-estate-selection-pinot-noir",
+    "categoria": "vinos-tintos",
+    "nombre": "Chakana Estate Selection Pinot Noir",
+    "descripcion": "Pinot Noir · Chakana · Valle de Uco, Mendoza",
+    "precio": 24750
+   },
+   {
+    "id": "vinos-tintos-cuchillo-de-palo-pinot-noir",
+    "categoria": "vinos-tintos",
+    "nombre": "Cuchillo de Palo Pinot Noir",
+    "descripcion": "Pinot Noir · Cuchillo de Palo · Valle de Uco, Mendoza",
+    "precio": 25900
+   },
+   {
+    "id": "vinos-tintos-numina-pinot-noir",
+    "categoria": "vinos-tintos",
+    "nombre": "Numina Pinot Noir",
+    "descripcion": "Pinot Noir · Salentein · Tunuyan, Valle de Uco",
+    "precio": 29300
+   },
+   {
+    "id": "vinos-tintos-mara-pinot-noir",
+    "categoria": "vinos-tintos",
+    "nombre": "Mara Pinot Noir",
+    "descripcion": "Pinot Noir · Mara · Tupungato, Valle de Uco",
+    "precio": 33750
+   },
+   {
+    "id": "vinos-tintos-barda-pinot-noir",
+    "categoria": "vinos-tintos",
+    "nombre": "Barda Pinot Noir",
+    "descripcion": "Pinot Noir · Chacra · Mainque, Rio Negro",
+    "precio": 56100
+   },
+   {
+    "id": "vinos-tintos-mariflor-merlot",
+    "categoria": "vinos-tintos",
+    "nombre": "Mariflor Merlot",
+    "descripcion": "Otras Variedades · Rolland · Vista Flores, Tunuyán",
+    "precio": 21750
+   },
+   {
+    "id": "vinos-tintos-zuccardi-q-tempranillo",
+    "categoria": "vinos-tintos",
+    "nombre": "Zuccardi Q Tempranillo",
+    "descripcion": "Otras Variedades · Zuccardi · Altamira y San Pablo, Valle de Uco",
+    "precio": 34150
+   },
+   {
+    "id": "vinos-tintos-cadus-petit-verdot",
+    "categoria": "vinos-tintos",
+    "nombre": "Cadus Petit Verdot",
+    "descripcion": "Otras Variedades · Cadus Wines · Los Chacayes, Tunuyán",
+    "precio": 44500
+   },
+   {
+    "id": "vinos-tintos-tigerstone-garnacha",
+    "categoria": "vinos-tintos",
+    "nombre": "Tigerstone Garnacha",
+    "descripcion": "Otras Variedades · Estancia los Cardones Tolombón · Valles Calchaquíes, Salta",
+    "precio": 47600
+   },
+   {
+    "id": "vinos-tintos-ribera-del-cuarzo-merlot",
+    "categoria": "vinos-tintos",
+    "nombre": "Ribera del Cuarzo Merlot",
+    "descripcion": "Otras Variedades · Ribera del Cuarzo · Rio Negro, Patagonia",
+    "precio": 48300
+   },
+   {
+    "id": "vinos-tintos-pulenta-estate-merlot",
+    "categoria": "vinos-tintos",
+    "nombre": "Pulenta Estate Merlot",
+    "descripcion": "Otras Variedades · Pulenta · Alto Agrelo, Luján de Cuyo",
+    "precio": 49000
+   },
+   {
+    "id": "vinos-tintos-la-cayetana-syrah",
+    "categoria": "vinos-tintos",
+    "nombre": "La Cayetana Syrah",
+    "descripcion": "Otras Variedades · La Cayetana · Los Chacayes, Tunuyán",
+    "precio": 52700
+   },
+   {
+    "id": "vinos-tintos-salentein-corte-de-tintas",
+    "categoria": "vinos-tintos",
+    "nombre": "Salentein Corte de Tintas",
+    "descripcion": "Cabernet Sauvignon - Malbec - Cabernet Franc · Salentein · Valle de Uco, Mendoza",
+    "precio": 20800
+   },
+   {
+    "id": "vinos-tintos-lo-red-blend",
+    "categoria": "vinos-tintos",
+    "nombre": "Lo Red Blend",
+    "descripcion": "Cabernet Franc - Malbec · Lorenzo de Agrelo · Alto Agrelo, Luján de Cuyo",
+    "precio": 32500
+   },
+   {
+    "id": "vinos-tintos-clos-de-los-7",
+    "categoria": "vinos-tintos",
+    "nombre": "Clos de los 7",
+    "descripcion": "Malbec - Merlot - Syrah · Clos de los 7 Vistaflores · Tunuyán, Valle de Uco",
+    "precio": 38000
+   },
+   {
+    "id": "vinos-tintos-hermandad",
+    "categoria": "vinos-tintos",
+    "nombre": "Hermandad",
+    "descripcion": "Malbec - Cabernet Sauvignon - Petit Verdot · Falasco Wines · Valle de Uco, Mendoza",
+    "precio": 38200
+   },
+   {
+    "id": "vinos-tintos-d-v-catena-tinto-historico",
+    "categoria": "vinos-tintos",
+    "nombre": "D. V. Catena Tinto Histórico",
+    "descripcion": "Malbec - Petit Verdot · Catena Zapata · Paraje Altamira, San Carlos",
+    "precio": 42000
+   },
+   {
+    "id": "vinos-tintos-cuvelier-los-andes-grand-vin",
+    "categoria": "vinos-tintos",
+    "nombre": "Cuvelier los Andes Grand Vin",
+    "descripcion": "Malbec - Cabernet Sauvignon - Syrah - Merlot - Petit Verdot · Cuvelier los Andes · Vistaflores, Tunuyán",
+    "precio": 42250
+   },
+   {
+    "id": "vinos-tintos-san-pedro-de-yacochuya-blend",
+    "categoria": "vinos-tintos",
+    "nombre": "San Pedro de Yacochuya Blend",
+    "descripcion": "Malbec - Cabernet Sauvignon · Yacochuya · Valles Calchaquíes, Cafayate",
+    "precio": 46100
+   },
+   {
+    "id": "vinos-tintos-vistalba-corte-b",
+    "categoria": "vinos-tintos",
+    "nombre": "Vistalba Corte B",
+    "descripcion": "Malbec - Cabernet Sauvignon · Vistalba · Luján de Cuyo, Mendoza",
+    "precio": 49400
+   },
+   {
+    "id": "vinos-tintos-chanar-punco-blend",
+    "categoria": "vinos-tintos",
+    "nombre": "Chañar Punco Blend",
+    "descripcion": "Malbec - Cabernet Sauvignon · El Esteco · Valle Calchaquí, Catamarca",
+    "precio": 52700
+   },
+   {
+    "id": "vinos-tintos-homo-felix-blend",
+    "categoria": "vinos-tintos",
+    "nombre": "Homo Felix Blend",
+    "descripcion": "Malbec - Cabernet Franc - Cabernet Sauvignon · Homo Felix · Valle de Uco - Luján Cuyo, Mendoza",
+    "precio": 54100
+   },
+   {
+    "id": "vinos-tintos-trinita-grand-reserve",
+    "categoria": "vinos-tintos",
+    "nombre": "Trinitá Grand Reserve",
+    "descripcion": "Malbec - Cabernet Sauvignon - Merlot · Piattelli Vineyards · La Piramide, Agrelo",
+    "precio": 65600
+   },
+   {
+    "id": "vinos-tintos-vistalba-corte-a",
+    "categoria": "vinos-tintos",
+    "nombre": "Vistalba Corte a",
+    "descripcion": "Malbec - Cabernet Sauvignon · Vistalba · Luján de Cuyo, Mendoza",
+    "precio": 99500
+   },
+   {
+    "id": "vinos-tintos-paraiso",
+    "categoria": "vinos-tintos",
+    "nombre": "Paraiso",
+    "descripcion": "Malbec - Cabernet Sauvignon · Luigi Bosca · Gualtallary, Altamira y los Arboles",
+    "precio": 209000
+   },
+   {
+    "id": "vinos-tintos-catena-zapata-estiba-reservada",
+    "categoria": "vinos-tintos",
+    "nombre": "Catena Zapata Estiba Reservada",
+    "descripcion": "Cabernet Sauvignon - Cabernet Franc · Catena Zapata · La Piramide, Agrelo",
+    "precio": 582000
+   },
+   {
+    "id": "vinos-dulces-salentein-late-harvest",
+    "categoria": "vinos-dulces",
+    "nombre": "Salentein Late Harvest",
+    "descripcion": "Sauvignon Blanc · Salentein · Tunuyan, Valle de Uco",
+    "precio": 26800
+   },
+   {
+    "id": "vinos-dulces-susana-balbo-signature-torrontes",
+    "categoria": "vinos-dulces",
+    "nombre": "Susana Balbo Signature Torrontes",
+    "descripcion": "Late Harvest · Susana Balbo · Paraje Altamira, Valle de Uco",
+    "precio": 44900
+   }
+  ]
+ },
+ "cartaQR": {
+  "estilo": "marca",
+  "textos": {
+   "titulo": "Nuestra carta"
+  }
+ },
+ "textos": {
+  "reservarMesa": "Reservá tu mesa frente al lago",
+  "confirmarReserva": "Confirmar reserva",
+  "comentario": "Algo que tengamos que saber"
+ }
+}
